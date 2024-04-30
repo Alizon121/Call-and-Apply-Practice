@@ -6,5 +6,7 @@ function say(name) {
 helloMessage = { message: 'Hello,' };
 heyThereMessage = { message: 'Hey there,' };
 
-say(helloMessage, "John");
-say(heyThereMessage, "Michael");
+say.call(helloMessage, "John");
+say.call(heyThereMessage, "Michael");
+
+// reference a function, then follow with 'call' method and pass in an object and arguments
